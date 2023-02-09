@@ -123,8 +123,84 @@ li a:hover {
     font-size: 6vw;
 }
 
+.resume p {
+    font-size: 3vw;
+}
+
 .job-title {
     font-size: 4vw;
     font-weight: 1000;
     margin-bottom: 0;
+}
+
+.gallery {
+    position: relative;
+    top: 80vw;
+    display: flexbox;
+    color: #D4D4D4;
+    padding-left: 5vw;
+}
+
+.gallery img {
+    width: 46vw;
+    height: auto;
+    border-radius: 20px;
+    transition-duration: 0.4s;
+}
+
+.gallery img:hover {
+    opacity: .5;
+}
+
+.contact {
+    position: relative;
+    top: 80vw;
+    display: flexbox;
+    color: #D4D4D4;
+    padding-left: 5vw;
+    font-size: 20px;
+}
+
+#name, #message {
+    background-color: #252526;
+    border-style: none;
+    resize: none;
+}
+
+.send {
+    background-color: #252526;
+    border-style: none;
+    font-family: Consolas, monaco, monospace;
+    color: #D4D4D4;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 990px) {
+    .about, .resume, .gallery, .contact{
+        top: 30vw;
+    }
+
+    .resume {
+        top: 30vw;
+    }
+
+
+    .gallery img{
+        width: 30vw;
+        height: auto;
+        border-radius: 20px;
+        transition-duration: 0.4s;
+    }
+
+}
+
+@media (min-width: 1370px) {
+    .about, .resume, .gallery, .contact{
+        top: 20vw;
+    }
+
+    .resume, .gallery, .contact {
+        top: 30vw;
+    }
+
 }
